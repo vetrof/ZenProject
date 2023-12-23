@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h71vsspk6s@^-x6!51$e=*%w*fv$%eq2skp5qsb5$9e^nt47ti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'inbox.apps.InboxConfig',
     'tbot',
+    'tasks',
 ]
 
 MIDDLEWARE = [
